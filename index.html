@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/highcharts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/highcharts.js"></script>
+    <script src="./js/exporting.js"></script>
+    <script src="./js/accessibility.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/themes/adaptive.js"></script>
+</head>
+<body>
+    <main>
+        <div class="box">
+            <div class="box__wrap">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="table__header">Показатель</th>
+                            <th class="table__header table__green">Текущий день</th>
+                            <th class="table__header">Вчера</th>
+                            <th class="table__header">Этот день недели</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="table__data">Выручка, руб</td>
+                            <td class="table__data table__green text-right">500 521</td>
+                            <td class="table__data text-2">
+                                <span>480 521</span>
+                                <span class="table__percent">4%</span>
+                            </td>
+                            <td class="table__data text-right table__red">4 805 121</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <figure class="highcharts-figure">
+        <div id="container"></div>
+    </figure>
+
+    <div class="main-2">
+        <div class="box">
+            <div class="box__wrap">
+                <table class="table">
+                    <tbody>                    
+                        <tr>
+                            <td class="table__data">Наличные</td>
+                            <td class="table__data table__green text-right">300 000</td>
+                            <td class="table__data text-2">
+                                <span>300 000</span>
+                                <span class="table__percent">0%</span>
+                            </td>
+                            <td class="table__data text-right">300 000</td>
+                        </tr>
+
+                        
+                        <tr>
+                            <td class="table__data">Безналичный расчет</td>
+                            <td class="table__data table__green text-right">100 000</td>
+                            <td class="table__data text-2">
+                                <span>100 000</span>
+                                <span class="table__percent">0%</span>
+                            </td>
+                            <td class="table__data text-right">100 000</td>
+                        </tr>
+
+                        <tr>
+                            <td class="table__data">Кредитные карты</td>
+                            <td class="table__data table__green text-right">100 521</td>
+                            <td class="table__data text-2">
+                                <span>100 521</span>
+                                <span class="table__percent">0%</span>
+                            </td>
+                            <td class="table__data text-right">100 521</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="table__data">Средний чек, руб</td>
+                            <td class="table__data table__green text-right">1 300</td>
+                            <td class="table__data text-2">
+                                <span>900</span>
+                                <span class="table__percent">44%</span>
+                            </td>
+                            <td class="table__data text-right table__green">900</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="table__data">Средний гость, руб</td>
+                            <td class="table__data table__green text-right">1 200</td>
+                            <td class="table__data text-2">
+                                <span>800</span>
+                                <span class="table__percent">50%</span>
+                            </td>
+                            <td class="table__data text-right table__green">800</td>
+                        </tr>
+
+                        
+                        <tr>
+                            <td class="table__data">Удаления из чека (после оплаты), руб</td>
+                            <td class="table__data table__green text-right">1 000</td>
+                            <td class="table__data text-2">
+                                <span>1 100</span>
+                                <span class="table__percent">-9%</span>
+                            </td>
+                            <td class="table__data text-right table__green">900</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="table__data">Удаления из чека (до оплаты), руб</td>
+                            <td class="table__data table__green text-right">1 300</td>
+                            <td class="table__data text-2">
+                                <span>1 300</span>
+                                <span class="table__percent">0%</span>
+                            </td>
+                            <td class="table__data text-right table__green">900</td>
+                        </tr>
+
+                        
+                        <tr>
+                            <td class="table__data">Количество чеков</td>
+                            <td class="table__data table__green text-right">34</td>
+                            <td class="table__data text-2">
+                                <span>36</span>
+                                <span class="table__percent">-6%</span>
+                            </td>
+                            <td class="table__data text-right">34</td>
+                        </tr>
+
+                        
+                        <tr>
+                            <td class="table__data">Количество гостей</td>
+                            <td class="table__data table__green text-right">34</td>
+                            <td class="table__data text-2">
+                                <span>36</span>
+                                <span class="table__percent">-6%</span>
+                            </td>
+                            <td class="table__data text-right table__green">32</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
