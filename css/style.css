@@ -84,6 +84,16 @@ tr {
     background-color: #ddf5ce;
 }
 
+.green-percent {
+    font-weight: 700;
+    color: green;
+}
+
+.red-percent {
+    font-weight: 700;
+    color: red;
+}
+
 .table__red {
     background-color: #f5cece;
 }

@@ -17,8 +17,10 @@ dataPercent.forEach((item, i) => {
     percentText[i].textContent = `${item}%`;
     if(item > 0) {
         percentText[i].parentNode.classList.add("table__green")
+        percentText[i].classList.add("green-percent");
     } else if(item < 0) {
         percentText[i].parentNode.classList.add("table__red");
+        percentText[i].classList.add("red-percent");
     } else {
         return;
     }
